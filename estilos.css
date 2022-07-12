@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+#brazoD{
+  transform-box: fill-box;
+  transform: translateY(-25px) rotate(-20deg);
+  animation: 2s brazod infinite alternate ease-out;
+}
+#brazoI{
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+  transform:rotate(-10deg);
+  animation: 5s brazoi infinite alternate 1s;
+}
+#telefono{
+  transform-box: fill-box;
+  animation: 2s telefono infinite alternate-reverse ease-out;
+}
+#cabeza{
+  transform-box: fill-box;
+  transform-origin: center;
+  transform:rotate(-10deg);
+  animation: 2s cabeza infinite alternate-reverse ease-out;
+}
+@keyframes brazod {
+  from{
+    transform-origin: 100% 100%;
+    transform: translateY(-25px) rotate(-20deg);
+  }
+  to{
+    transform-origin: 100% 100%;
+    transform: translateY(-25px) rotate(-80deg);
+  }
+}
+@keyframes brazoi {
+  from{
+    transform-origin: 50% 0%;
+    transform:rotate(-10deg);
+  }
+  to{
+    transform-origin: 50% 0%;
+    transform:rotate(10deg);
+  }
+}
+@keyframes telefono {
+  from{
+    transform-origin: 0% 0%;
+    transform:translateY(0px);
+  }
+  to{
+    transform-origin: 0% 0%;
+    transform:translateY(-20px);
+  }
+}
+@keyframes cabeza {
+  from{
+    transform-origin: center;
+    transform:rotate(-10deg);
+  }
+  to{
+    transform-origin: center;
+    transform:rotate(10deg);
+  }
+}
